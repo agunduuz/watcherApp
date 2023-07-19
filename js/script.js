@@ -289,7 +289,7 @@ function displayPagination() {
     displaySearchResults(results);
   });
   // Previous Page
-  document.querySelector('#previous').addEventListener('click', async () => {
+  document.querySelector('#prev').addEventListener('click', async () => {
     global.search.page--;
     const { results, total_pages } = await searchAPIData();
     displaySearchResults(results);
